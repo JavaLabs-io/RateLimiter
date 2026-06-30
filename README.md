@@ -1,6 +1,6 @@
 # API Rate Limiter
 
-A simple Java simulation of API rate limiting that tracks user requests and blocks users after they exceed a predefined limit.
+A Java simulation of API rate limiting that tracks user requests and blocks users after they exceed a predefined limit.
 
 ---
 
@@ -24,39 +24,13 @@ Each incoming request is associated with a user.
 
 ---
 
-## Example
+## Example Output
 
-### Incoming Requests
-
-```text
-User1
-User1
-User2
-User1
-User2
-User1
-```
-
-### Output
-
-```text
-Request from User1 -> Allowed
-Request from User1 -> Allowed
-Request from User2 -> Allowed
-Request from User1 -> Allowed
-Request from User2 -> Allowed
-Request from User1 -> Blocked
-```
-
-### Request Statistics
-
-```text
-User1 -> 3
-User2 -> 2
-```
+<p align="center">
+  <img src="RateLimiter.png" alt="Rate Limiter Output" width="700">
+</p>
 
 ---
-
 ## Concepts Used
 
 - Java Collections
