@@ -31,12 +31,27 @@ Each incoming request is associated with a user.
 </p>
 
 ---
+
+## Testing
+
+This project uses **JUnit 5** and **Maven** for unit testing.
+
+### Covered Test Cases
+
+- Allows a new user's first request
+- Allows requests up to the configured limit
+- Blocks requests after exceeding the limit
+- Maintains independent request counts for different users
+
+---
+
 ## Concepts Used
 
 - Java Collections
+- JUnit 5
+- Unit Testing
+- Maven
 - HashMap
-- Request Tracking
-- Conditional Logic
 - Object-Oriented Programming
 
 ---
@@ -45,4 +60,29 @@ Each incoming request is associated with a user.
 
 Rate limiting is a common technique used by APIs and web services to control traffic and prevent abuse.
 
-This project demonstrates a basic rate-limiting mechanism using simple Java data structures and logic.
+This project was built to explore how backend systems enforce request limits using in-memory data structures. It demonstrates per-user request tracking, simple business logic, and unit testing with JUnit 5.
+
+---
+
+## Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/JavaLabs-io/RateLimiter.git
+
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd RateLimiter
+```
+
+3. Run the unit tests:
+
+```bash
+mvn test
+```
+
+4. Run the application by opening `RateLimiter.java` in your IDE (such as VS Code, Eclipse, or IntelliJ IDEA) and executing the `main()` method.
